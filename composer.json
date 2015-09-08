@@ -1,11 +1,15 @@
 {
     "name": "ozziest/patika",
+    "description": "Simple PHP routing library.",
+    "keywords": ["php", "routing", "router"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Özgür Adem Işıklı",
             "email": "i.ozguradem@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "autoload": {
         "psr-0": {
             "Ozziest\\Patika\\": "src"
