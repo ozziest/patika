@@ -1,2 +1,5 @@
 .DS_Store
 vendor
+composer.lock
+.php_cs.cache
+Thumbs.db
