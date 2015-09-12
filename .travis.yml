@@ -9,3 +9,5 @@ php:
 # optionally specify a list of environments, for example to test different RDBMS
 env:
   - APP_ENV=testing
+
+install: php vendor/vendors.php
