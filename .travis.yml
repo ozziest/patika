@@ -10,4 +10,4 @@ php:
 env:
   - APP_ENV=testing
 
-install: php vendor/vendors.php
+install: php vendor/autoload.php
