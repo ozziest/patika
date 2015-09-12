@@ -3,6 +3,7 @@
     "description": "Simple PHP routing library.",
     "keywords": ["php", "routing", "router"],
     "license": "MIT",
+
     "authors": [
         {
             "name": "Özgür Adem Işıklı",
@@ -13,6 +14,9 @@
         "psr-0": {
             "Ozziest\\Patika\\": "src"
         }
+    },
+    "require": {
+        "php": ">=5.5.*"
     },
     "require-dev": {
         "phpunit/phpunit": "4.8.*"
