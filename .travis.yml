@@ -10,4 +10,5 @@ php:
 env:
   - APP_ENV=testing
 
-install: composer install
+install: 
+  - composer install
