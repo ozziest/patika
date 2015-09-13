@@ -91,11 +91,12 @@ class UnitTest extends PHPUnit_Framework_TestCase {
     public function urlProvider()
     {
         return array(
-          array('users/get', '\App\Controllers\Users', 'get', []),
-          array('users/get', '\App\Controllers\Users', 'get', []),
-          array('users/manage/get', '\App\Controllers\Users\Manage', 'get', []),
-          array('users/get/1/2/foo/bar', '\App\Controllers\Users', 'get', ['1', '2', 'foo', 'bar']),
-          array('admin/manage/users/get/1/2/foo/bar', '\App\Controllers\Admin\Manage\Users', 'get', ['1', '2', 'foo', 'bar'])
+            array('users/get', '\App\Controllers\Users', 'get', []),
+            array('/users/get', '\App\Controllers\Users', 'get', []),
+            array('/users/get', '\App\Controllers\Users', 'get', []),
+            array('/users/manage/get', '\App\Controllers\Users\Manage', 'get', []),
+            array('/users/get/1/2/foo/bar', '\App\Controllers\Users', 'get', ['1', '2', 'foo', 'bar']),
+            array('/admin/manage/users/get/1/2/foo/bar', '\App\Controllers\Admin\Manage\Users', 'get', ['1', '2', 'foo', 'bar'])
         );
     }    
 

@@ -46,6 +46,10 @@ class Request {
     public function __construct($app)
     {
         $this->app = $app;
+        if (substr($this->app, strlen($this->app) - 1) === '\\')
+        {
+            $this->app = substr($this->app, 0, strlen($this->app) - 1);
+        }
         $this->url = $_SERVER['REQUEST_URI'];
         $this->setNamespaceByUrl();
     }
@@ -67,7 +71,7 @@ class Request {
      */
     public function getFullNamespace()
     {
-        return $this->app.$this->namespace;
+        return str_replace(['\\\\', '\\'], '\\', $this->app.'\\'.$this->namespace);
     }
 
     /**
@@ -132,7 +136,10 @@ class Request {
                 $this->namespace .= '\\'.ucfirst($item);
             }
         }
-
+        if (substr($this->namespace, 0, 1) === '\\') 
+        {
+            $this->namespace = substr($this->namespace, 1);
+        }
         // Setting the action
         $this->action = $parts[count($parts) - 1];        
     }
