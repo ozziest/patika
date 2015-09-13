@@ -10,7 +10,7 @@ Patika is a simple routing package that you can use easily your projects. This i
 
 ## Warning!
 
-This package is under development. Please waiting to stable version. 
+This package is under development. You should wait to stable version. 
 
 #### Installation 
 
