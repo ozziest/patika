@@ -88,4 +88,4 @@ $ curl -X GET localhost:8000/users/all 
 
 #### Full Documentation
 
-Documentation will be defined soon!
+You can read the [Full Documentation](http://ozziest.github.io/patika)!
