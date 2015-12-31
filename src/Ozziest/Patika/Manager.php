@@ -26,12 +26,12 @@ class Manager {
      * @param  array        $options
      * @return null
      */
-    public function __construct(Array $options)
+    public function __construct(Array $options, $defaultController = "Main", $defaultMethod = "index")
     {
         if (!isset($options['app'])) {
             throw new InvalidArgumentException('Application namespace must be setted!');
         }
-        $this->request = new Request($options['app']);
+        $this->request = new Request($options['app'], $defaultController, $defaultMethod);
     }
 
     /**

@@ -1,0 +1,29 @@
+2015-12-13T17:48:40.316368000 0.003754s notice: Recursively removing directory /Library/WebServer/Documents/github/patika/rethinkdb_data/tmp
+2015-12-13T17:48:40.317626000 0.005018s notice: Initializing directory /Library/WebServer/Documents/github/patika/rethinkdb_data
+2015-12-13T17:48:40.317720000 0.005105s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Library/WebServer/Documents/github/patika/rethinkdb_data' did not already exist or is empty.)
+2015-12-13T17:48:40.317770000 0.005155s notice: Running rethinkdb 2.1.5-2 (CLANG 7.0.0 (clang-700.0.72))...
+2015-12-13T17:48:40.321486000 0.008873s notice: Running on Darwin 15.0.0 x86_64
+2015-12-13T17:48:40.321549000 0.008934s notice: Loading data from directory /Library/WebServer/Documents/github/patika/rethinkdb_data
+2015-12-13T17:48:40.398510000 0.085895s info: Automatically using cache size of 160 MB
+2015-12-13T17:48:40.399006000 0.086391s notice: Listening for intracluster connections on port 29015
+2015-12-13T17:48:40.401134000 0.088519s notice: Listening for client driver connections on port 28015
+2015-12-13T17:48:40.401302000 0.088687s notice: Listening for administrative HTTP connections on port 8080
+2015-12-13T17:48:40.401307000 0.088692s notice: Listening on addresses: 127.0.0.1, ::1
+2015-12-13T17:48:40.401308000 0.088693s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2015-12-13T17:48:40.401312000 0.088697s notice: Server ready, "Ozgurs_MacBook_Pro_2_local_23o" 1cbbd611-a79e-459e-9203-ef6867d41fed
+2015-12-13T17:48:41.992671000 1.680527s notice: A newer version of the RethinkDB server is available: 2.2.1. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2015-12-13T17:48:51.445292000 11.135196s info: Table 75f1e4ff-fe3e-48d3-a249-c313876e3577: Added replica on this server.
+2015-12-13T17:48:51.449759000 11.139703s info: Table 8cbf5689-1c00-4478-b843-a9fa38da778d: Added replica on this server.
+2015-12-13T17:48:51.452601000 11.142546s info: Table 8dd86713-39df-42c7-9ade-dc7e2678017b: Added replica on this server.
+2015-12-13T17:48:52.982837000 12.673052s info: Table 8cbf5689-1c00-4478-b843-a9fa38da778d: Starting a new Raft election for term 1.
+2015-12-13T17:48:53.005136000 12.695351s info: Table 8cbf5689-1c00-4478-b843-a9fa38da778d: This server is Raft leader for term 1. Latest log index is 0.
+2015-12-13T17:48:53.140561000 12.830776s info: Table 75f1e4ff-fe3e-48d3-a249-c313876e3577: Starting a new Raft election for term 1.
+2015-12-13T17:48:53.163295000 12.853511s info: Table 75f1e4ff-fe3e-48d3-a249-c313876e3577: This server is Raft leader for term 1. Latest log index is 0.
+2015-12-13T17:48:53.427144000 13.117480s info: Table 8dd86713-39df-42c7-9ade-dc7e2678017b: Starting a new Raft election for term 1.
+2015-12-13T17:48:53.456428000 13.146884s info: Table 8dd86713-39df-42c7-9ade-dc7e2678017b: This server is Raft leader for term 1. Latest log index is 0.
+2015-12-13T17:48:53.588072000 13.278759s info: Table 8cbf5689-1c00-4478-b843-a9fa38da778d: Configuration is changing.
+2015-12-13T17:49:49.622377000 69.326274s notice: Server got SIGINT from pid 20615, uid 501; shutting down...
+2015-12-13T17:49:49.622550000 69.326447s notice: Shutting down client connections...
+2015-12-13T17:49:49.622710000 69.326607s notice: All client connections closed.
+2015-12-13T17:49:49.622718000 69.326615s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2015-12-13T17:49:49.631285000 69.335183s notice: Storage engine shut down.

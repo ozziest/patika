@@ -91,6 +91,7 @@ class UnitTest extends PHPUnit_Framework_TestCase {
     public function urlProvider()
     {
         return array(
+            array('/', '\App\Controllers\Main', 'index', []),
             array('users/get', '\App\Controllers\Users', 'get', []),
             array('/users/get', '\App\Controllers\Users', 'get', []),
             array('/users/get', '\App\Controllers\Users', 'get', []),

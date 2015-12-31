@@ -38,14 +38,32 @@ class Request {
     private $arguments = [];
 
     /**
+     * Default controller
+     *
+     * @var string
+     */
+    private $defaultController;
+
+    /**
+     * Default method
+     *
+     * @var string
+     */
+    private $defaultMethod;
+
+    /**
      * Class constructer 
      *
      * @param  string        $app
+     * @param  string        $defaultController
+     * @param  string        $defaultMethod
      * @return null
      */
-    public function __construct($app)
+    public function __construct($app, $defaultController, $defaultMethod)
     {
         $this->app = $app;
+        $this->defaultController = $defaultController;
+        $this->defaultMethod = $defaultMethod;
         if (substr($this->app, strlen($this->app) - 1) === '\\')
         {
             $this->app = substr($this->app, 0, strlen($this->app) - 1);
@@ -71,6 +89,10 @@ class Request {
      */
     public function getFullNamespace()
     {
+        if ($this->namespace === false)
+        {
+            $this->namespace = "Main";
+        }
         return str_replace(['\\\\', '\\'], '\\', $this->app.'\\'.$this->namespace);
     }
 
@@ -91,6 +113,10 @@ class Request {
      */
     public function getAction()
     {
+        if (strlen(trim($this->action)) === 0)
+        {
+            $this->action = $this->defaultMethod;
+        }
         return $this->action;
     }
 
