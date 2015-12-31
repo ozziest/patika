@@ -8,10 +8,6 @@
 
 Patika is a simple routing package that you can use easily your projects. This is small and useful package because you dont have to define all routes. You should code your controller instead of routing defination.
 
-## Warning!
-
-This package is under development. You should wait to stable version. 
-
 #### Installation 
 
 To install through composer, simply put the following in your `composer.json` file:
